@@ -1,7 +1,7 @@
-
 #include <iostream>
-#include "Anschrift.h"
 #include "Person.h"
+
+
 using namespace std;
 
 void log (Person &person) {

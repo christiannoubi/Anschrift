@@ -4,6 +4,8 @@
 #include <vector>
 #include "Anschrift.h"
 
+using namespace std;
+
 class Person {
 
 private:
@@ -25,11 +27,11 @@ public:
         this->_anschrift = anschrift;
     }
     void setzeAnschrift (string  _strasse, string  _hausnummer, int _postleitzahl, string _stadt) {
-
+        new Anschrift(_strasse, _hausnummer, _postleitzahl, _stadt );
     }
 
     Anschrift anschrift () {
-
+        return _anschrift;
     }
 
     void befreunden (Person &person) {
